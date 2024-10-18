@@ -1,0 +1,176 @@
+{% extends 'heart/main.html' %}
+
+<title>{% block title %}Home{% endblock title %}</title>
+
+{% block content %} {% comment %}
+<div class="container-sm">
+  {% endcomment %}
+  <h2 class="text-center mt-5 mb-5">การพยากรณ์โรคหัวใจ</h2>
+
+  <form class="row g-3" action="" method="POST">
+    {% csrf_token %}
+
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="col-md-3 mx-3">
+        <div class="text-center"><label for="fname">อายุ</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="age"
+          required
+          placeholder="อายุ"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3">
+        <div class="text-center"><label for="fname">เพศ</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="sex"
+          required
+          placeholder="เพศ"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3">
+        <div class="text-center"><label for="fname">cp</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="cp"
+          required
+          placeholder="cp"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">trestbps</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="trestbps"
+          required
+          placeholder="trestbps"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center">
+          <label for="fname">คอเลสเตอรอล</label>
+        </div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="chol"
+          required
+          placeholder="คอลเลสเตอรอล"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">fbs</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="fbs"
+          required
+          placeholder="fbs"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">restecg</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="restecg"
+          required
+          placeholder="restecg"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">thalach</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="thalach"
+          required
+          placeholder="thalach"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">exang</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="exang"
+          required
+          placeholder="exang"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">oldpeak</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="oldpeak"
+          required
+          placeholder="oldpeak"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">slope</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="slope"
+          required
+          placeholder="slope"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">ca</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="ca"
+          required
+          placeholder="ca"
+        />
+      </div>
+
+      <div class="col-md-3 mx-3 mb-3 mt-3">
+        <div class="text-center"><label for="fname">thal</label></div>
+
+        <input
+          type="float"
+          class="form-control"
+          name="thal"
+          required
+          placeholder="thal"
+        />
+      </div>
+    </div>
+    <div><input type="submit" class="mt-5 btn btn-success px-5 mb-5" /></div>
+  </form>
+  {% comment %}
+</div>
+{% endcomment %} {% endblock %}
